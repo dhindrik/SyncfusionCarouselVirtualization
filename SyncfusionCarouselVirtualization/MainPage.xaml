@@ -6,10 +6,11 @@
     xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit">
     <carousel:SfCarousel
         x:Name="theCarousel"
-        ItemHeight="500"
-        ItemWidth="500"
         EnableVirtualization="True"
-        ItemsSource="{Binding Images}">
+        ItemHeight="500"
+        ItemsSource="{Binding Images}"
+        ViewMode="Linear"
+        WidthRequest="500">
         <carousel:SfCarousel.ItemTemplate>
             <DataTemplate>
                 <Image Source="{Binding}" />

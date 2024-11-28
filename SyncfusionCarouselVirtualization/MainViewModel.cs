@@ -19,4 +19,9 @@ public class MainViewModel : INotifyPropertyChanged
 
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Images)));
     }
+
+    public void RaisePropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
 }
