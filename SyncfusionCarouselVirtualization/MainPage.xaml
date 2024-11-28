@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SyncfusionCarouselVirtualization.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit">
+    <carousel:SfCarousel
+        x:Name="theCarousel"
+        ItemHeight="500"
+        ItemWidth="500"
+        EnableVirtualization="True"
+        ItemsSource="{Binding Images}">
+        <carousel:SfCarousel.ItemTemplate>
+            <DataTemplate>
+                <Image Source="{Binding}" />
+            </DataTemplate>
+        </carousel:SfCarousel.ItemTemplate>
+    </carousel:SfCarousel>
+</ContentPage>
